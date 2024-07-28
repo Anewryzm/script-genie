@@ -57,6 +57,30 @@ GROQ_API_KEY=your_groq_api_key
  npm run dev
 ```
 
+**5. Tracking metrics (optional):**
+
+For tracking metrics on this assistant you can use the KeywordsAI endpoint.
+You will be going to need to create an account first, then use this configuration on your `.env.local` file:
+```
+ GROQ_BASE_URL=https://api.keywordsai.co/api/
+ GROQ_API_KEY=your_keywordsai_api_key
+```
+
+Then you will need to point to the right model name in `src/app/actions.tsx`.
+It may look like this:
+
+```
+ const groq = createOpenAI({
+   apiKey: process.env.GROQ_API_KEY,
+   baseURL: process.env.GROQ_BASE_URL,
+ });
+ // Change the name from 'llama3-70b-8192' to 'groq/llama3-70b-8192'
+ const model = groq('groq/llama3-70b-8192')
+
+ export async function generateScript(query: string) {
+```
+
+
 ## Closer Look at the Environment Variables
 - `GROQ_API_KEY`: Your Groq API key. You can get this by signing up for an account on the Groq platform and creating a new API key.
 - `GROQ_BASE_URL`: The Groq base URL string. You can check more information about it [here](https://console.groq.com/docs/openai).
