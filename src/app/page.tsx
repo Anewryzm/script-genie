@@ -33,7 +33,7 @@ export default function Home() {
   };
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-normal p-12 md:p-24 bg-black text-white lowercase">
+    <main className="flex min-h-screen flex-col items-center justify-normal px-8 py-6 md:p-6 bg-black text-white lowercase">
       <header className="w-full text-center">
         <h1 className="text-2xl font-bold text-center mb-8">Script Genie.</h1>
       </header>
