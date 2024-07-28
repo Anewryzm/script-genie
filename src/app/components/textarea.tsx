@@ -9,7 +9,7 @@ const TextArea = ({ query, setQuery }:{query:string, setQuery: (value: string) =
         value={query}
         onChange={(e) => setQuery(e.target.value)}
         placeholder="we can start with a topic, tell me what you need and i will do the rest..."
-        className="min-h-[250px] focus-visible:ring-offset-1 pt-3 pl-4 pr-4 pb-3 rounded-none border-none font-light text-base leading-relaxed bg-neutral-950 placeholder:text-neutral-500"
+        className="min-h-[250px] focus-visible:ring-offset-1 pt-3 pl-4 pr-4 pb-3 rounded-none border-none font-light text-base leading-relaxed bg-neutral-950 placeholder:text-neutral-500 lowercase"
       />
     </div>
   );
