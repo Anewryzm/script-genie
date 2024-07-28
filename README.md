@@ -70,6 +70,8 @@ Then you will need to point to the right model name in `src/app/actions.tsx`.
 It may look like this:
 
 ```
+...
+
  const groq = createOpenAI({
    apiKey: process.env.GROQ_API_KEY,
    baseURL: process.env.GROQ_BASE_URL,
@@ -78,6 +80,8 @@ It may look like this:
  const model = groq('groq/llama3-70b-8192')
 
  export async function generateScript(query: string) {
+
+...
 ```
 
 
