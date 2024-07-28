@@ -5,6 +5,9 @@ import { streamText } from "ai";
 import { createOpenAI } from "@ai-sdk/openai";
 import { promptTemplate } from "./promptTemplate";
 
+// You should create a .env.local file in the root of the project and add the following:
+// GROQ_BASE_URL=https://api.groq.com/openai/v1
+// GROQ_API_KEY=your_groq_api_key
 
 const groq = createOpenAI({
   apiKey: process.env.GROQ_API_KEY,
