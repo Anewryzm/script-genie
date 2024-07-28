@@ -40,6 +40,14 @@ export default function Home() {
             <TextArea query={query} setQuery={setQuery}/>
             <Button type="submit" className="mt-2 bg-white text-black rounded-none text-lg hover:bg-white">generate script</Button>
           </form>
+          <div id="feedback" className="text-center mt-8">
+            <p>
+              Got some feedback? <a href="https://twitter.com/thatCardoza" target="_blank" className="underline">drop a dm.</a>
+            </p>
+            <p className="mt-4">
+              check out the <a href="https://github.com/Anewryzm/script-genie" target="_blank" className="underline">repo here</a>
+            </p>
+          </div>
         </div>
         <div className="xl:w-[680px] max-w-[680px] w-full mx-auto xl:m-0">
           {hints ? <Hints/> : <></>}
