@@ -194,6 +194,7 @@ El guión debe estar escrito en tercera persona.
 Use the input just as a knowledge base.
 your output only has to be the SCRIPT.
 
+important note: your response should be always in english.
 
 Este es el input del usuario:
 
