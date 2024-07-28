@@ -34,6 +34,9 @@ export default function Home() {
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-normal p-12 md:p-24 bg-black text-white lowercase">
+      <header className="w-full text-center">
+        <h1 className="text-2xl font-bold text-center mb-8">Script Genie.</h1>
+      </header>
       <div className="flex flex-col xl:flex-row gap-12 w-full justify-center">
         <div className="xl:w-[600px] xl:max-w-[600px] sm:w-full md:w-[600px] mx-auto xl:m-0 w-full">
           <form onSubmit={handleSubmit} className="flex flex-col gap-2 w-full">
