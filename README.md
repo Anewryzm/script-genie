@@ -32,18 +32,18 @@ You will find a fully detailed guide on how to use the app in the Hints componen
 
 ## How to use it locally
 
-1. Clone the repository:
+**1. Clone the repository:**
 ```bash
 git clone https://github.com/Anewryzm/script-genie.git
 ```
 
-2. Install the dependencies:
+**2. Install the dependencies:**
 
 ```bash
 npm install
 ```
 
-3. Define your environment variables in the .env.local file:
+**3. Define your environment variables in the .env.local file:**
 
 You will need to add this file at the root of the folder and set the following variables:
 
@@ -52,7 +52,7 @@ GROQ_BASE_URL=https://api.groq.com/openai/v1
 GROQ_API_KEY=your_groq_api_key
 ```
 
-Start the server and run the app:
+**4. Start the server and run the app:**
 ```
  npm run dev
 ```
